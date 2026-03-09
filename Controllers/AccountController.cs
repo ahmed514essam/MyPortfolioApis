@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using MyPortfolioApis.Dtos;
 using MyPortfolioApis.Models;
 
-namespace testApi.Controllers
+namespace MyPortfolioApis.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

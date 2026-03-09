@@ -33,12 +33,11 @@ builder.Services.AddScoped<ProjectsServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
 
+app.MapGet("/", () => "API is working");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthentication();
